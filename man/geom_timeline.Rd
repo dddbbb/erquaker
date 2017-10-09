@@ -26,7 +26,7 @@ geom_timeline(mapping = NULL, data = NULL, stat = "identity",
 \item{...}{...}
 }
 \value{
-ggplot layer with timeline
+ggplot layer with timeline aes draw_key_point
 }
 \description{
 Function plots timeline with circle point of earthquakes

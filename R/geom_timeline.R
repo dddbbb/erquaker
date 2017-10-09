@@ -1,4 +1,4 @@
-GeomTimeline <- ggplot2::ggproto("GeomTimeline", Geom,
+GeomTimeline <- ggplot2::ggproto("GeomTimeline", ggplot2::Geom,
                            required_aes = c("x"),
                            default_aes = ggplot2::aes(shape = 19, size=1, color = "black", alpha = 0.5, stroke = 1, fill=NA),
                            draw_key = ggplot2::draw_key_point,
