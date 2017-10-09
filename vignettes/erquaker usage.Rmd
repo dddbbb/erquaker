@@ -21,6 +21,7 @@ Dataset can be obtained from https://www.ngdc.noaa.gov/nndc/struts/form?t=101650
   library(dplyr)
   library(magrittr)
   library(erquaker)
+  library(ggplot2)
   dataset_noaa_raw %>%
   eq_clean_data()%>%head()
 ```
