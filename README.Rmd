@@ -1,10 +1,4 @@
----
-title: "README"
-author: "Kirill Efremov"
-date: '7 октября 2017 г '
-output: html_document
----
-
+[![Travis-CI Build Status](https://travis-ci.org/dddbbb/erquaker.svg?branch=master)](https://travis-ci.org/dddbbb/erquaker)
 ## Erquaker package
 
 This erquaker package provides function for cleaning and viualizing NOAA Significant earthquakes. Dataset can be obtained from NOAA's https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1
