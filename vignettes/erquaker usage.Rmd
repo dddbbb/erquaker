@@ -14,7 +14,7 @@ vignette: >
 This package contains functions for cleaning raw NOAA' significant earthquakes dataset
 eq_clean_data(raw). Raw is a data.frame which contains DATE, YEAR, MONTH, DAY, LATITUDE, LONGITUDE,
 TOTAL_DEATHS,EQ_PRIMARY,LOCATION_NAME varaibles.
-Dataset can be obtained from  \href{https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1}{NOAA's}
+Dataset can be obtained from https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1
 
 ```{r}
   library(readr)
