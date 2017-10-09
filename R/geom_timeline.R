@@ -1,7 +1,7 @@
 GeomTimeline <- ggplot2::ggproto("GeomTimeline", Geom,
                            required_aes = c("x"),
-                           default_aes = aes(shape = 19, size=1, color = "black", alpha = 0.5, stroke = 1, fill=NA),
-                           draw_key = draw_key_point,
+                           default_aes = ggplot2::aes(shape = 19, size=1, color = "black", alpha = 0.5, stroke = 1, fill=NA),
+                           draw_key = ggplot2::draw_key_point,
 
                            draw_group = function(data, panel_params, coord) {
                              coords <- coord$transform(data, panel_params)
@@ -42,7 +42,7 @@ GeomTimeline <- ggplot2::ggproto("GeomTimeline", Geom,
 #' @param inherit.aes inherit.aes
 #' @param ... ...
 #'
-#' @return ggplot layer with timeline
+#' @return ggplot layer with timeline aes draw_key_point
 #' @export
 #' @importFrom ggplot2 ggproto layer
 #' @importFrom grid gpar gList pointsGrob linesGrob gpar

@@ -1,7 +1,7 @@
 GeomTimelineLabel <- ggplot2::ggproto("GeomTimelineLabel", Geom,
                              required_aes = c("x", "label"),
                              default_aes = ggplot2::aes(n_max = 5),
-                             draw_key = draw_key_text,
+                             draw_key = ggplot2::draw_key_text,
 
                              draw_group = function(data, panel_params, coord) {
                                coords <- coord$transform(data, panel_params)
@@ -42,7 +42,7 @@ GeomTimelineLabel <- ggplot2::ggproto("GeomTimelineLabel", Geom,
 #'
 #' @return ggplot layer with labels
 #' @export
-#' @importFrom ggplot2 ggproto layer
+#' @importFrom ggplot2 ggproto layer draw_key_text aes
 #' @importFrom grid gpar gList polylineGrob textGrob gpar
 #' @examples
 #' d%>%subset(COUNTRY=="USA" | COUNTRY=="CHINA")%>%subset(DATE>=as.Date("2000-01-01"))%>%
