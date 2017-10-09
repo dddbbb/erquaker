@@ -20,6 +20,6 @@ Function takes raw dataset as data.frame which contains DATE, YEAR, MONTH, DAY, 
 EarthQuake Database}
 }
 \examples{
-eq_clean_data(d)
+eq_clean_data(dataset_noaa_raw)
 
 }

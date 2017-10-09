@@ -17,5 +17,5 @@ Dataset contains varaible LOCATION_NAME that should be trimmed. This function de
 in LOCATION_NAME placed before ":"
 }
 \examples{
-eq_location_clean(d)
+eq_location_clean(dataset_noaa_raw)
 }
