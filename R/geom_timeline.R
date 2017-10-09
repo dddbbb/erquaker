@@ -47,7 +47,8 @@ GeomTimeline <- ggplot2::ggproto("GeomTimeline", ggplot2::Geom,
 #' @importFrom ggplot2 ggproto layer
 #' @importFrom grid gpar gList pointsGrob linesGrob gpar
 #' @examples
-#'
+#'library(magrittr)
+#'library(dplyr)
 #'d%>%subset(COUNTRY=="USA" | COUNTRY=="CHINA")%>%subset(DATE>=as.Date("2000-01-01"))%>%
 #' ggplot(aes(DATE, COUNTRY, colour = DEATHS, size = EQ_PRIMARY, label = LOCATION_NAME)) +
 #'  geom_timeline()+ geom_timeline_label(n_max=5)+

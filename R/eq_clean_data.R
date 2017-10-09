@@ -16,8 +16,8 @@
 #' @importFrom magrittr %>%
 #' @examples
 #' #dataset is a name of file with NOAA data
-#' readr::read_delim(dataset, delim = "\t") %>%
-#' eq_clean_data()
+#' d<-readr::read_delim(dataset, delim = "\t")
+#' eq_clean_data(d)
 #'
 eq_clean_data<-function(raw) {
   #Raplace NA by 01 for events with missing month and days data
