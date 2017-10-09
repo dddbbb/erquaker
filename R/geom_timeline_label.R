@@ -1,6 +1,6 @@
 GeomTimelineLabel <- ggplot2::ggproto("GeomTimelineLabel", Geom,
                              required_aes = c("x", "label"),
-                             default_aes = aes(n_max = 5),
+                             default_aes = ggplot2::aes(n_max = 5),
                              draw_key = draw_key_text,
 
                              draw_group = function(data, panel_params, coord) {
