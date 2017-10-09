@@ -10,7 +10,7 @@
 #'
 #' @return Returns cleaned and formatted data.frame
 #' @export
-#' @importFrom dplyr mutate select
+#' @importFrom dplyr mutate select one_of
 #' @importFrom tidyr unite
 #' @importFrom lubridate days
 #' @importFrom magrittr %>%
@@ -36,7 +36,7 @@ eq_clean_data<-function(raw) {
     dplyr::mutate(LATITUDE = as.numeric(LATITUDE))%>%
     dplyr::mutate(DATE = ifelse(is.na(DATE), as.Date(bc-days(date2)+days(1)), DATE))%>%
     dplyr::mutate(DATE = as.Date(DATE, origin="1970-01-01"))%>%
-    dplyr::select(-one_of("date2"))
+    dplyr::select(-dplyr::one_of("date2"))
 }
 
 
