@@ -55,7 +55,7 @@ eq_clean_data<-function(raw) {
 #' @importFrom stringr str_to_title str_replace_all
 #' @importFrom magrittr %>%
 #' @examples
-#dataset is a name of file with NOAA data
+#' #dataset is a name of file with NOAA data
 #' d<-readr::read_delim(dataset, delim = "\t")
 #' eq_location_clean(d)
 

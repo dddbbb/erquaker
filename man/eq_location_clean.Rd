@@ -18,6 +18,6 @@ in LOCATION_NAME placed before ":"
 }
 \examples{
 #dataset is a name of file with NOAA data
-readr::read_delim(dataset, delim = "\\t") \%>\%
-eq_location_clean
+d<-readr::read_delim(dataset, delim = "\\t")
+eq_location_clean(d)
 }

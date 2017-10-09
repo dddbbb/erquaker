@@ -21,7 +21,7 @@ EarthQuake Database}
 }
 \examples{
 #dataset is a name of file with NOAA data
-readr::read_delim(dataset, delim = "\\t") \%>\%
-eq_clean_data()
+d<-readr::read_delim(dataset, delim = "\\t")
+eq_clean_data(d)
 
 }
