@@ -5,11 +5,7 @@ date: '7 октября 2017 г '
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-## R Markdown
+## Erquaker package
 
 This erquaker package provides function for cleaning and viualizing NOAA Significant earthquakes. Dataset can be obtained from NOAA's https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1
 It contains:
