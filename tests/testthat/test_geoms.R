@@ -1,3 +1,4 @@
+library(ggplot2)
 context("Geoms plotting")
 
 d<-eq_clean_data(dataset_noaa_raw)
