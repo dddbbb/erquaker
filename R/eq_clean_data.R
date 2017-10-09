@@ -35,7 +35,7 @@ eq_clean_data<-function(raw) {
     dplyr::mutate(LONGITUDE = as.numeric(LONGITUDE))%>%
     dplyr::mutate(LATITUDE = as.numeric(LATITUDE))%>%
     dplyr::mutate(TOTAL_DEATHS = as.numeric(TOTAL_DEATHS))%>%
-    dplyr::mutate(DATE = ifelse(is.na(DATE), as.Date(bc-days(date2)+days(1)), DATE))%>%
+    dplyr::mutate(DATE = ifelse(is.na(DATE), as.Date(bc-lubridate::days(date2)+lubridate::days(1)), DATE))%>%
     dplyr::mutate(DATE = as.Date(DATE, origin="1970-01-01"))%>%
     dplyr::select(-dplyr::one_of("date2"))
 }
