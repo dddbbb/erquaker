@@ -15,8 +15,6 @@
 #' @importFrom lubridate days
 #' @importFrom magrittr %>%
 #' @examples
-#' #dataset is a name of file with NOAA data
-#' d<-readr::read_delim(dataset, delim = "\t")
 #' eq_clean_data(d)
 #'
 eq_clean_data<-function(raw) {
@@ -55,8 +53,6 @@ eq_clean_data<-function(raw) {
 #' @importFrom stringr str_to_title str_replace_all
 #' @importFrom magrittr %>%
 #' @examples
-#' #dataset is a name of file with NOAA data
-#' d<-readr::read_delim(dataset, delim = "\t")
 #' eq_location_clean(d)
 
 eq_location_clean <- function(raw){

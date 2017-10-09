@@ -17,7 +17,5 @@ Dataset contains varaible LOCATION_NAME that should be trimmed. This function de
 in LOCATION_NAME placed before ":"
 }
 \examples{
-#dataset is a name of file with NOAA data
-d<-readr::read_delim(dataset, delim = "\\t")
 eq_location_clean(d)
 }

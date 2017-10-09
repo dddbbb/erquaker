@@ -20,8 +20,6 @@ Function takes raw dataset as data.frame which contains DATE, YEAR, MONTH, DAY, 
 EarthQuake Database}
 }
 \examples{
-#dataset is a name of file with NOAA data
-d<-readr::read_delim(dataset, delim = "\\t")
 eq_clean_data(d)
 
 }
