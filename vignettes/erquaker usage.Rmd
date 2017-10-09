@@ -10,27 +10,31 @@ vignette: >
 ---
 
 
-## Erquaker
+# Erquaker
 This package contains functions for cleaning raw NOAA' significant earthquakes dataset
 eq_clean_data(raw). Raw is a data.frame which contains DATE, YEAR, MONTH, DAY, LATITUDE, LONGITUDE,
 TOTAL_DEATHS,EQ_PRIMARY,LOCATION_NAME varaibles.
 Dataset can be obtained from  \href{https://www.ngdc.noaa.gov/nndc/struts/form?t=101650&s=1&d=1}{NOAA's}
+
 ```{r}
   library(readr)
   library(dplyr)
   library(magrittr)
+  library(erquaker)
   dataset_noaa_raw %>%
   eq_clean_data()%>%head()
 ```
 
 Also for futher labeling of points we need trim LOCATION_NAME variable with eq_location_clean() function
+
 ```{r}
 d<-dataset_noaa_raw %>%
   eq_clean_data()%>%eq_location_clean()
 head(d)
 ```
 
-# Now we can plot some information via geom_timeline function
+Now we can plot some information via geom_timeline function
+
 ```{r}
 p<-d%>%subset(COUNTRY=="USA" | COUNTRY=="CHINA")%>%subset(DATE>=as.Date("2000-01-01"))%>%
    ggplot(aes(DATE, COUNTRY, colour = DEATHS, size = EQ_PRIMARY, label = LOCATION_NAME)) +
@@ -51,6 +55,7 @@ p+geom_timeline_label(n_max=5)
 ```
 
 The next step is mapping events with leaflet and eq_map() function
+
 ```{r}
 dataset_noaa_raw %>%
  eq_clean_data() %>%
