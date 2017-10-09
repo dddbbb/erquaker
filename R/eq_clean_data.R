@@ -15,8 +15,9 @@
 #' @importFrom lubridate days
 #' @importFrom magrittr %>%
 #' @examples
+#' \dontrun{
 #' eq_clean_data(dataset_noaa_raw)
-#'
+#'}
 eq_clean_data<-function(raw) {
   #Raplace NA by 01 for events with missing month and days data
   na.replace <- function (x) {
@@ -53,7 +54,9 @@ eq_clean_data<-function(raw) {
 #' @importFrom stringr str_to_title str_replace_all
 #' @importFrom magrittr %>%
 #' @examples
+#' \dontrun{
 #' eq_location_clean(dataset_noaa_raw)
+#' }
 
 eq_location_clean <- function(raw){
   cleaned <- raw%>%

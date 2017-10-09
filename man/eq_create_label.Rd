@@ -21,10 +21,11 @@ Creates HTML for annotation popup text
 \code{\link{eq_map}} uses this function
 }
 \examples{
-# d<-dataset_noaa_raw
-# d<-dplyr::filter(eq_clean_data(d), COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000)
-# eq_map(d)
-# For Date annotation popup
-# eq_map(d, annot_col="DATE")
-
+\dontrun{
+d<-dataset_noaa_raw
+d<-dplyr::filter(eq_clean_data(d), COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000)
+eq_map(d)
+For Date annotation popup
+eq_map(d, annot_col="DATE")
+}
 }

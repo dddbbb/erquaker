@@ -10,12 +10,14 @@
 #' @importFrom leaflet leaflet addTiles addCircleMarkers
 #' @importFrom magrittr %>%
 #' @examples
-#' # d<-dataset_noaa_raw
-#' # d<-dplyr::filter(eq_clean_data(d), COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000)
-#' # eq_map(d)
-#' # For Date annotation popup
-#' # eq_map(d, annot_col="DATE")
-#'
+#' \dontrun{
+#' d<-dataset_noaa_raw
+#' d<-dplyr::filter(eq_clean_data(d), COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000)
+#' eq_map(d)
+#' For Date annotation popup
+#' eq_map(d, annot_col="DATE")
+#' }
+
 eq_map <- function(data, annot_col="popup text"){
   leaflet() %>%
     addTiles() %>%
@@ -38,12 +40,13 @@ eq_map <- function(data, annot_col="popup text"){
 #' @return Leaflet map
 #' @export
 #' @examples
-#' # d<-dataset_noaa_raw
-#' # d<-dplyr::filter(eq_clean_data(d), COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000)
-#' # eq_map(d)
-#' # For Date annotation popup
-#' # eq_map(d, annot_col="DATE")
-#'
+#' \dontrun{
+#' d<-dataset_noaa_raw
+#' d<-dplyr::filter(eq_clean_data(d), COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000)
+#' eq_map(d)
+#' For Date annotation popup
+#' eq_map(d, annot_col="DATE")
+#'}
 eq_create_label<-function(data, annot_col = "DATE"){
   data<-eq_location_clean(data)
   if(annot_col == "popup text"){
