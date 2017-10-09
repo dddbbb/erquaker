@@ -1,6 +1,3 @@
-library(dplyr)
-library(gglpot2)
-library(erquaker)
 context("Geoms plotting")
 
 d<-eq_clean_data(dataset_noaa_raw)
@@ -15,7 +12,7 @@ p<-d%>%subset(COUNTRY=="USA" | COUNTRY=="CHINA")%>%subset(DATE>=as.Date("2000-01
 
 
 
-test_that("Is geoms produce ggplot object", {
-  expect_that(
+testthat::test_that("Is geoms produce ggplot object", {
+  testthat::expect_that(
     p, is_a("ggplot"))
 })

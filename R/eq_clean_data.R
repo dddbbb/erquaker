@@ -55,9 +55,10 @@ eq_clean_data<-function(raw) {
 #' @importFrom stringr str_to_title str_replace_all
 #' @importFrom magrittr %>%
 #' @examples
-#' #dataset is a name of file with NOAA data
-#' readr::read_delim(dataset, delim = "\t") %>%
-#' eq_location_clean
+#dataset is a name of file with NOAA data
+#' d<-readr::read_delim(dataset, delim = "\t")
+#' eq_location_clean(d)
+
 eq_location_clean <- function(raw){
   cleaned <- raw%>%
     dplyr::mutate(LOCATION_NAME = stringr::str_to_title(stringr::str_replace_all(raw$LOCATION_NAME, ".*:", "")))
