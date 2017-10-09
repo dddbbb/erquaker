@@ -1,5 +1,5 @@
-library(testthat)
 library(erquaker)
+library(dplyr)
 context("Cleaning dataset")
 d<-eq_clean_data(dataset_noaa_raw)
 test_that('Dataset format correctness', {
