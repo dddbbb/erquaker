@@ -18,10 +18,10 @@ Leaflet map
 Creates map with circle points of earthqakes with popup annotation
 }
 \examples{
-d<-dataset_noaa_raw
-d<-dplyr::filter(eq_clean_data(d), COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000)
-eq_map(d)
+# d<-dataset_noaa_raw
+# d<-dplyr::filter(eq_clean_data(d), COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000)
+# eq_map(d)
 # For Date annotation popup
-eq_map(d, annot_col="DATE")
+# eq_map(d, annot_col="DATE")
 
 }

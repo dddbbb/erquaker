@@ -32,14 +32,12 @@ ggplot layer with labels
 Function plots Labels for earthquakes.
 }
 \examples{
-library(magrittr)
-library(dplyr)
-d\%>\%subset(COUNTRY=="USA" | COUNTRY=="CHINA")\%>\%subset(DATE>=as.Date("2000-01-01"))\%>\%
-ggplot(aes(DATE, COUNTRY, colour = DEATHS, size = EQ_PRIMARY, label = LOCATION_NAME)) +
- geom_timeline()+ geom_timeline_label(n_max=5)+
-  guides(size = guide_legend("Richter scale value")) +
-  guides(colour = guide_colorbar("# Deaths", label.theme = element_text(angle = 45, size = 8 ))) +
-  ylab("") +
-  theme_classic() +
-  theme(legend.position="bottom", axis.line.y = element_blank())
+# d\%>\%subset(COUNTRY=="USA" | COUNTRY=="CHINA")\%>\%subset(DATE>=as.Date("2000-01-01"))\%>\%
+# ggplot(aes(DATE, COUNTRY, colour = DEATHS, size = EQ_PRIMARY, label = LOCATION_NAME)) +
+#  geom_timeline()+ geom_timeline_label(n_max=5)+
+#   guides(size = guide_legend("Richter scale value")) +
+#   guides(colour = guide_colorbar("# Deaths", label.theme = element_text(angle = 45, size = 8 ))) +
+#   ylab("") +
+#   theme_classic() +
+#   theme(legend.position="bottom", axis.line.y = element_blank())
 }
