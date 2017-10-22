@@ -5,7 +5,7 @@ This erquaker package provides function for cleaning and viualizing NOAA Signifi
 It contains:
  - eq_clean_data() - Function takes raw dataset as data.frame which contains DATE, YEAR, MONTH, DAY, LATITUDE, LONGITUDE,         TOTAL_DEATHS,EQ_PRIMARY,LOCATION_NAME varaibles.
  - eq_location_clean() - function deletes names of countries and regions which in dataset$LOCATION_NAME placed before ":"
- - geom_timeline - Function plots timeline with circle point of earthquakes
- - geom_timeline_label - Function plots Labels for earthquakes
- - eq_map - Creates map with circle points of earthqakes with popup annotation
- - eq_create_label  - Creates HTML for annotation popup text
+ - geom_timeline() - Function plots timeline with circle point of earthquakes
+ - geom_timeline_label() - Function plots Labels for earthquakes
+ - eq_map() - Creates map with circle points of earthqakes with popup annotation
+ - eq_create_label()  - Creates HTML for annotation popup text

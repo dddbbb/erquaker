@@ -9,7 +9,7 @@ testthat::test_that('Dataset format correctness', {
 })
 
 d<-eq_location_clean(d)
-testthat::test_that('Location name had changed', {
+testthat::test_that('Location name has changed', {
   f<-d$LOCATION_NAME[1]!=dataset_noaa_raw$LOCATION_NAME[1]
   testthat::expect_that(f, is_true())
 })
