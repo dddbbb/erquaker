@@ -63,3 +63,6 @@ eq_location_clean <- function(raw){
     dplyr::mutate(LOCATION_NAME = stringr::str_to_title(stringr::str_replace_all(raw$LOCATION_NAME, ".*:", "")))
 }
 
+#' dataset obtained from the U.S. National Oceanographic and Atmospheric Administration (NOAA)
+#'
+"dataset_noaa_raw"
