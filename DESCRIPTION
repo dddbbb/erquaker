@@ -6,6 +6,7 @@ Author: Kirill Efremov  <kn.efremov@gmail.com>
 Maintainer: Kirill Efremov <kn.efremov@gmail.com>
 Description: Package provides functions for cleaning dataset, for plotting timeline and mapping NOAA's Significant earthquakes. Made to meet requirements for Capstone Project of Mastering Software Development in R Specialization.  
 License: GPL (>= 2)
+Depends: R(>= 2.10.0)
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 6.0.1

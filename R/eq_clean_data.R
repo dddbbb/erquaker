@@ -1,3 +1,4 @@
+globalVariables(c(".", "%>%"))
 #' Clean dataset obtained from the U.S. National Oceanographic and Atmospheric Administration (NOAA)
 #'
 #'  Function takes raw dataset as data.frame which contains DATE, YEAR, MONTH, DAY, LATITUDE, LONGITUDE,
@@ -10,10 +11,9 @@
 #'
 #' @return Returns cleaned and formatted data.frame
 #' @export
-#' @importFrom dplyr mutate select one_of
+#' @importFrom dplyr %>% mutate select one_of
 #' @importFrom tidyr unite
 #' @importFrom lubridate days
-#' @importFrom magrittr %>%
 #' @examples
 #' \dontrun{
 #' eq_clean_data(dataset_noaa_raw)
