@@ -1,4 +1,3 @@
-globalVariables(c(".", "%>%"))
 #' Clean dataset obtained from the U.S. National Oceanographic and Atmospheric Administration (NOAA)
 #'
 #'  Function takes raw dataset as data.frame which contains DATE, YEAR, MONTH, DAY, LATITUDE, LONGITUDE,
@@ -66,3 +65,4 @@ eq_location_clean <- function(raw){
 #' dataset obtained from the U.S. National Oceanographic and Atmospheric Administration (NOAA)
 #'
 "dataset_noaa_raw"
+
